@@ -1,0 +1,183 @@
+[22-May-2014 12:30:43 UTC] PHP Fatal error:  Call to undefined function of_get_option() in /home/lapalazz/public_html/blog/wp-content/themes/Kansas/sponsors.php on line 8
+[26-Jul-2014 06:01:57 UTC] PHP Fatal error:  Class 'ui' not found in /home/lapalazz/public_html/blog/wp-content/themes/bonpress/header.php on line 5
+[26-Jul-2014 06:02:00 UTC] PHP Fatal error:  Class 'ui' not found in /home/lapalazz/public_html/blog/wp-content/themes/bonpress/header.php on line 5
+[26-Jul-2014 06:03:11 UTC] PHP Fatal error:  Class 'ui' not found in /home/lapalazz/public_html/blog/wp-content/themes/bonpress/header.php on line 5
+[26-Jul-2014 07:16:47 UTC] PHP Catchable fatal error:  Object of class WP_Error could not be converted to string in /home/lapalazz/public_html/blog/wp-content/themes/Binary/aq_resizer.php on line 76
+[01-Dec-2014 21:16:01 UTC] Salesforce: No message set.
+[16-Dec-2014 19:43:33 UTC] Salesforce: No message set.
+[18-Dec-2014 12:25:07 UTC] Salesforce: No message set.
+[20-Dec-2014 18:13:34 UTC] Salesforce: No message set.
+[24-Dec-2014 04:30:59 UTC] Salesforce: No message set.
+[28-Dec-2014 13:23:39 UTC] Salesforce: No message set.
+[29-Dec-2014 02:54:49 UTC] Salesforce: No message set.
+[29-Dec-2014 10:09:51 UTC] Salesforce: No message set.
+[29-Dec-2014 19:35:41 UTC] Salesforce: No message set.
+[30-Dec-2014 04:47:45 UTC] Salesforce: No message set.
+[03-Jan-2015 04:31:27 UTC] Salesforce: No message set.
+[03-Jan-2015 04:32:08 UTC] Salesforce: No message set.
+[03-Jan-2015 04:34:45 UTC] Salesforce: No message set.
+[07-Jan-2015 08:40:13 UTC] Salesforce: No message set.
+[08-Jan-2015 02:01:48 UTC] Salesforce: No message set.
+[08-Jan-2015 05:47:20 UTC] Salesforce: No message set.
+[08-Jan-2015 05:47:54 UTC] Salesforce: No message set.
+[11-Jan-2015 12:51:10 UTC] Salesforce: No message set.
+[12-Jan-2015 21:33:19 UTC] Salesforce: No message set.
+[24-Jan-2015 15:25:06 UTC] Salesforce: No message set.
+[13-Feb-2015 14:11:15 UTC] Salesforce: No message set.
+[15-Feb-2015 04:33:53 UTC] Salesforce: No message set.
+[15-Feb-2015 14:13:02 UTC] Salesforce: No message set.
+[15-Feb-2015 17:46:44 UTC] Salesforce: No message set.
+[04-Mar-2015 11:23:29 UTC] Salesforce: No message set.
+[05-Mar-2015 20:03:30 UTC] Salesforce: No message set.
+[18-Mar-2015 22:32:39 UTC] Salesforce: No message set.
+[20-Mar-2015 07:58:18 UTC] Salesforce: No message set.
+[24-Mar-2015 01:33:47 UTC] Salesforce: No message set.
+[28-Mar-2015 16:51:29 UTC] Salesforce: No message set.
+[11-Apr-2015 03:27:26 UTC] Salesforce: No message set.
+[15-Apr-2015 03:35:47 UTC] Salesforce: No message set.
+[24-Apr-2015 11:21:26 UTC] Salesforce: No message set.
+[25-Apr-2015 14:47:56 UTC] Salesforce: No message set.
+[03-May-2015 01:44:19 UTC] Salesforce: No message set.
+[03-May-2015 04:34:18 UTC] Salesforce: No message set.
+[03-May-2015 20:24:00 UTC] Salesforce: No message set.
+[04-May-2015 16:59:16 UTC] Salesforce: No message set.
+[05-May-2015 18:52:54 UTC] Salesforce: No message set.
+[05-May-2015 18:52:59 UTC] Salesforce: No message set.
+[05-May-2015 23:29:54 UTC] Salesforce: No message set.
+[07-May-2015 02:21:16 UTC] Salesforce: No message set.
+[07-May-2015 02:21:23 UTC] Salesforce: No message set.
+[07-May-2015 02:21:26 UTC] Salesforce: No message set.
+[12-May-2015 15:53:27 UTC] Salesforce: No message set.
+[19-May-2015 23:49:57 UTC] Salesforce: No message set.
+[19-May-2015 23:49:58 UTC] Salesforce: No message set.
+[19-May-2015 23:49:59 UTC] Salesforce: No message set.
+[20-May-2015 15:11:56 UTC] Salesforce: No message set.
+[20-May-2015 15:11:57 UTC] Salesforce: No message set.
+[20-May-2015 15:11:58 UTC] Salesforce: No message set.
+[22-May-2015 12:06:54 UTC] Salesforce: No message set.
+[23-May-2015 14:34:29 UTC] Salesforce: No message set.
+[23-May-2015 14:35:01 UTC] Salesforce: No message set.
+[23-May-2015 14:35:02 UTC] Salesforce: No message set.
+[24-May-2015 17:25:49 UTC] Salesforce: No message set.
+[24-May-2015 17:26:05 UTC] Salesforce: No message set.
+[24-May-2015 17:26:06 UTC] Salesforce: No message set.
+[25-May-2015 04:06:48 UTC] Salesforce: No message set.
+[25-May-2015 04:06:49 UTC] Salesforce: No message set.
+[25-May-2015 04:06:50 UTC] Salesforce: No message set.
+[25-May-2015 08:49:22 UTC] Salesforce: No message set.
+[26-May-2015 07:10:43 UTC] Salesforce: No message set.
+[06-Jun-2015 13:30:26 UTC] Salesforce HTTP error: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => Failed to connect to www.salesforce.com port 443: Connection timed out
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+[20-Jun-2015 07:44:25 UTC] Salesforce HTTP error: WP_Error Object
+(
+    [errors] => Array
+        (
+            [http_request_failed] => Array
+                (
+                    [0] => Failed to connect to www.salesforce.com port 443: Connection timed out
+                )
+
+        )
+
+    [error_data] => Array
+        (
+        )
+
+)
+
+[02-Jul-2015 14:54:55 UTC] Salesforce: No message set.
+[03-Jul-2015 19:05:55 UTC] Salesforce: No message set.
+[05-Jul-2015 08:54:42 UTC] Salesforce: No message set.
+[06-Jul-2015 20:15:15 UTC] Salesforce: No message set.
+[11-Jul-2015 12:13:25 UTC] Salesforce: No message set.
+[26-Jul-2015 01:04:25 UTC] Salesforce: No message set.
+[26-Jul-2015 01:04:25 UTC] Salesforce: No message set.
+[26-Jul-2015 01:04:27 UTC] Salesforce: No message set.
+[27-Jul-2015 19:06:42 UTC] Salesforce: No message set.
+[27-Jul-2015 19:06:47 UTC] Salesforce: No message set.
+[27-Jul-2015 19:09:24 UTC] Salesforce: No message set.
+[28-Jul-2015 13:24:11 UTC] Salesforce: No message set.
+[31-Jul-2015 05:21:53 UTC] Salesforce: No message set.
+[31-Jul-2015 06:58:26 UTC] Salesforce: No message set.
+[04-Aug-2015 02:07:59 UTC] Salesforce: No message set.
+[05-Aug-2015 18:21:10 UTC] Salesforce: No message set.
+[07-Aug-2015 12:27:55 UTC] Salesforce: No message set.
+[07-Aug-2015 16:01:10 UTC] Salesforce: No message set.
+[07-Aug-2015 18:14:51 UTC] Salesforce: No message set.
+[07-Aug-2015 22:27:10 UTC] Salesforce: No message set.
+[09-Aug-2015 00:46:02 UTC] Salesforce: No message set.
+[10-Aug-2015 22:07:15 UTC] Salesforce: No message set.
+[14-Aug-2015 10:58:33 UTC] Salesforce: No message set.
+[14-Aug-2015 19:34:38 UTC] Salesforce: No message set.
+[16-Aug-2015 00:01:32 UTC] Salesforce: No message set.
+[16-Aug-2015 13:13:56 UTC] Salesforce: No message set.
+[16-Aug-2015 19:19:47 UTC] Salesforce: No message set.
+[19-Aug-2015 13:25:11 UTC] Salesforce: No message set.
+[26-Aug-2015 12:06:10 UTC] Salesforce: No message set.
+[29-Aug-2015 08:29:18 UTC] Salesforce: No message set.
+[01-Sep-2015 22:11:37 UTC] Salesforce: No message set.
+[05-Sep-2015 17:55:13 UTC] Salesforce: No message set.
+[06-Sep-2015 08:33:30 UTC] Salesforce: No message set.
+[08-Sep-2015 23:54:30 UTC] Salesforce: No message set.
+[09-Sep-2015 00:07:40 UTC] Salesforce: No message set.
+[09-Sep-2015 02:44:19 UTC] Salesforce: No message set.
+[09-Sep-2015 02:47:03 UTC] Salesforce: No message set.
+[09-Sep-2015 14:46:59 UTC] Salesforce: No message set.
+[10-Sep-2015 11:45:41 UTC] Salesforce: No message set.
+[10-Sep-2015 19:08:45 UTC] Salesforce: No message set.
+[10-Sep-2015 21:46:17 UTC] Salesforce: No message set.
+[11-Sep-2015 02:01:56 UTC] Salesforce: No message set.
+[11-Sep-2015 20:25:13 UTC] Salesforce: No message set.
+[11-Sep-2015 20:48:07 UTC] Salesforce: No message set.
+[11-Sep-2015 20:49:01 UTC] Salesforce: No message set.
+[11-Sep-2015 23:26:56 UTC] Salesforce: No message set.
+[14-Sep-2015 17:43:07 UTC] Salesforce: No message set.
+[14-Sep-2015 20:39:20 UTC] Salesforce: No message set.
+[15-Sep-2015 22:09:29 UTC] Salesforce: No message set.
+[22-Sep-2015 04:18:48 UTC] Salesforce: No message set.
+[25-Sep-2015 19:53:37 UTC] Salesforce: No message set.
+[26-Sep-2015 21:04:57 UTC] Salesforce: No message set.
+[01-Oct-2015 16:48:10 UTC] Salesforce: No message set.
+[06-Oct-2015 08:18:26 UTC] Salesforce: No message set.
+[06-Oct-2015 09:28:31 UTC] Salesforce: No message set.
+[09-Oct-2015 01:05:26 UTC] Salesforce: No message set.
+[10-Oct-2015 09:11:58 UTC] Salesforce: No message set.
+[10-Oct-2015 20:40:11 UTC] Salesforce: No message set.
+[17-Oct-2015 05:43:53 UTC] Salesforce: No message set.
+[18-Oct-2015 10:25:36 UTC] Salesforce: No message set.
+[19-Oct-2015 10:24:54 UTC] Salesforce: No message set.
+[19-Oct-2015 11:02:28 UTC] Salesforce: No message set.
+[19-Oct-2015 19:42:17 UTC] Salesforce: No message set.
+[19-Oct-2015 19:57:57 UTC] Salesforce: No message set.
+[20-Oct-2015 02:39:19 UTC] Salesforce: No message set.
+[20-Oct-2015 06:20:24 UTC] Salesforce: No message set.
+[20-Oct-2015 14:51:46 UTC] Salesforce: No message set.
+[21-Oct-2015 14:49:13 UTC] Salesforce: No message set.
+[22-Oct-2015 04:37:39 UTC] Salesforce: No message set.
+[24-Oct-2015 16:41:53 UTC] Salesforce: No message set.
+[25-Oct-2015 03:30:07 UTC] Salesforce: No message set.
+[25-Oct-2015 11:50:40 UTC] Salesforce: No message set.
+[25-Oct-2015 17:59:59 UTC] Salesforce: No message set.
+[26-Oct-2015 02:47:05 UTC] Salesforce: No message set.
+[26-Oct-2015 03:31:01 UTC] Salesforce: No message set.
+[19-Nov-2015 14:51:45 UTC] Salesforce: No message set.
+[26-Nov-2015 15:02:35 UTC] Salesforce: No message set.
+[28-Nov-2015 09:28:02 UTC] Salesforce: No message set.
+[07-Dec-2015 07:38:44 UTC] Salesforce: No message set.
+[04-Jan-2016 08:58:02 UTC] Salesforce: No message set.
+[08-Jan-2016 23:52:29 UTC] Salesforce: No message set.

@@ -1,0 +1,29 @@
+Changelog Legend:
+
+[+] = Added
+[*] = Changed
+[^] = Moved
+[=] = No Changes
+[x] = Deleted
+[!] = Bugs
+
+----
+
+(17/05/2014) - Update - Version 1.0.2
+
+[+] Added custom Page Template for displaying the Landing Page.
+[+] Added custom Page Template for displaying pages without the Page Title.
+
+----
+
+(05/05/2014) - Update - Version 1.0.1
+
+[+] Added Greek translation.
+[*] Changed the name of TGM_Plugin_Activation class to avoid conflicts with some plugins.
+[*] Changed the navigation to next/previous pages (added page links).
+[*] Changed the navigation to next/previous posts on single posts (added post titles).
+[*] Updated language localizations.
+
+----
+
+(16/04/2014) - The initial public release - Version 1.0.0

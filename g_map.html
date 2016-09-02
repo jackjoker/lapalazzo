@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>La Palazzo</title>
+
+        <style type="text/css">
+
+            body{
+                margin: 0;
+                padding:0;
+            }
+
+
+            #box_map_canvas{
+                position: absolute;
+                height: 100%;
+                width: 100%
+            }
+
+            #box_map_canvas img{
+                
+                max-width: none;
+            }
+
+
+            #map_residence_controls{
+                position: absolute;
+                z-index: 5;
+                bottom: 50px;
+                right: 50px;
+            }
+
+            #map_residence_controls ul{
+                
+                margin: 0;
+                padding:0;
+                list-style: none;
+            }
+
+            #map_residence_controls ul li{
+                
+                margin-bottom: 10px;
+                
+            }
+
+
+/* residence icons hover states */
+#map_hospitals{
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(img/residences/map_icons/1.png);
+}
+
+#map_hospitals:hover, #map_hospitals.active{
+    
+    background: url(img/residences/map_icons/1_active.png);
+}
+
+#map_colleges{
+
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(img/residences/map_icons/2.png);
+}
+
+#map_colleges:hover, #map_colleges.active{
+    
+    background: url(img/residences/map_icons/2_active.png);
+}
+
+#map_roads{
+
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(img/residences/map_icons/3.png);
+}
+
+#map_roads:hover, #map_roads.active{
+    
+    background: url(img/residences/map_icons/3_active.png);
+}
+
+#map_malls{
+
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(img/residences/map_icons/4.png);
+
+}
+
+#map_malls:hover, #map_malls.active{    
+    background: url(img/residences/map_icons/4_active.png);
+}
+
+
+#map_shopping{
+
+    width: 40px;
+    height: 40px;
+    display: block;
+    background: url(img/residences/map_icons/5.png);
+
+}
+
+#map_shopping:hover, #map_shopping.active{
+    
+    background: url(img/residences/map_icons/5_active.png);
+
+}
+
+/* end residence icons hover states */
+
+
+
+            </style>
+
+       
+
+    </head>
+    
+    <body onload="initialize_map()">
+    
+                    <div id="box_map_canvas">
+
+                    </div>   
+                         
+                    <div id="map_residence_controls">
+
+                    <span style="position:absolute; right:0; top:-60px; width: 100px; text-align: right; font-size:14px; font-weight:bold; font-style:italic;">  Click on belows icons to plot on the map</span>
+
+                        <ul>
+                            <li>
+                                <a href="javascript:" rel="hospitals" id="map_hospitals"></a> 
+                            </li>
+
+                            <li>
+                                <a href="javascript:" rel="colleges" id="map_colleges"></a> 
+                            </li>
+
+                            <li>
+                                <a href="javascript:" rel="transit" id="map_roads"></a> 
+                            </li>
+
+                            <li>
+                                <a href="javascript:" rel="business"  id="map_malls"></a> 
+                            </li>
+
+                             <li>
+                                <a href="javascript:" rel="shopping" id="map_shopping"></a> 
+                            </li>
+                        </ul> 
+
+                    </div>
+
+
+
+      <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+      <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.1.min.js"><\/script>')</script>
+
+      <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDukDIXTo_LZ8bug1wWq6F3gLXCxW1ZnCM&sensor=false">
+      </script>
+
+      <script type="text/javascript">
+
+        var map;
+
+        var h_markers=[];
+        var h_infos=[];
+
+        var c_markers=[];
+        var c_infos=[];
+
+        var b_markers=[];
+        var b_infos=[];
+
+        var t_markers=[];
+        var t_infos=[];
+
+        var s_markers=[];
+        var s_infos=[];
+
+
+        var active_map_filter;
+
+          function initialize_map() {
+              
+              var myLatlng = new google.maps.LatLng(12.919939,77.665611);
+              var mapOptions = {
+                zoom: 14,
+                center: myLatlng,
+                scrollwheel: false,
+                mapTypeId: google.maps.MapTypeId.ROADMAP,
+                mapTypeControl: false,
+                zoomControl: false,
+                panControl: false,
+                overviewMapControl : false,
+                streetViewControl: false                
+              }
+              
+              myLatlng = new google.maps.LatLng(12.919939,77.665611);
+
+              map = new google.maps.Map(document.getElementById("box_map_canvas"), mapOptions);
+                
+                var infowindow = new google.maps.InfoWindow({
+                      content: "<p>La Palazzo </p>"
+                  });
+
+                 var image = 'img/residences/logo_map.jpg';
+                 var marker = new google.maps.Marker({
+                      position: myLatlng,
+                      map: map,
+                      title:"La Palazzo",
+                      icon: image
+                  });
+                 
+
+                 google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(map,marker);
+                  });
+               
+
+
+
+               //Add hospitals marker
+               myLatlng = new google.maps.LatLng(12.913727, 77.680141);
+               add_hospital_marker(myLatlng,"Harmony Multi Speciality Clinic");
+
+               myLatlng = new google.maps.LatLng(12.913978, 77.679390);
+               add_hospital_marker(myLatlng,"Suwarnamukhi Hospital");
+               
+               myLatlng = new google.maps.LatLng(12.918903, 77.670582);
+               add_hospital_marker(myLatlng,"Dr. Levine Memorial Hospital");
+
+               myLatlng = new google.maps.LatLng(12.918945, 77.669970);
+               add_hospital_marker(myLatlng,"Ettina Multispeciality Hospital");
+
+               myLatlng = new google.maps.LatLng(12.924247, 77.650492);
+               add_hospital_marker(myLatlng,"Lake View Hospital");
+
+               myLatlng = new google.maps.LatLng(12.926548, 77.676971);
+               add_hospital_marker(myLatlng,"Apollo Clinic");
+
+
+
+
+               //Add School & Academy marker
+               myLatlng = new google.maps.LatLng(12.923974, 77.652763);
+               add_college_marker(myLatlng,"Euro Kids");
+
+               myLatlng = new google.maps.LatLng(12.922552, 77.670122);
+               add_college_marker(myLatlng,"India International School");
+               
+               myLatlng = new google.maps.LatLng(12.917574, 77.670423);
+               add_college_marker(myLatlng,"Orchids International School");
+
+               myLatlng = new google.maps.LatLng(12.911969, 77.652613);
+               add_college_marker(myLatlng,"National Institure of Fashion Technology");
+
+               myLatlng = new google.maps.LatLng(12.911969, 77.652613);
+               add_college_marker(myLatlng,"Alliance School of Business");
+
+
+
+               //Add BUSINESS DISTRICTS marker
+               myLatlng = new google.maps.LatLng(12.935006, 77.696247);
+               add_business_marker(myLatlng,"Cisco");
+
+               myLatlng = new google.maps.LatLng(12.932161, 77.690411);
+               add_business_marker(myLatlng,"Vrindavan Tech Village");
+               
+               myLatlng = new google.maps.LatLng(12.925762, 77.681184);
+               add_business_marker(myLatlng,"RMZ Ecospace");
+
+               myLatlng = new google.maps.LatLng(12.927176,77.681682);
+               add_business_marker(myLatlng,"Accenture");
+
+               myLatlng = new google.maps.LatLng(12.91426,77.685088);
+               add_business_marker(myLatlng,"Wipro");
+
+
+
+               //Add Transit markers
+               myLatlng = new google.maps.LatLng(12.897961, 77.660476);
+               add_transit_marker(myLatlng,"6 KM to Electronic City Express Way","down");
+
+               myLatlng = new google.maps.LatLng(12.934935, 77.637679);
+               add_transit_marker(myLatlng,"15 KM to Majestic Railway Station","up");
+               
+               myLatlng = new google.maps.LatLng(12.935935, 77.699752);
+               add_transit_marker(myLatlng,"17 KM to Whitefield Railway Station","right");
+
+               myLatlng = new google.maps.LatLng(12.934935, 77.689752);
+               add_transit_marker(myLatlng,"50 KM to Bangalore International Airport","up");
+
+               
+
+               //Add Shopping markers
+               myLatlng = new google.maps.LatLng(12.919033, 77.668856);
+               add_shopping_marker(myLatlng,"Big Bazaar Express");
+
+               myLatlng = new google.maps.LatLng(12.916669, 77.671410);
+               add_shopping_marker(myLatlng,"Total Mall");
+               
+               myLatlng = new google.maps.LatLng(12.923174, 77.669564);
+               add_shopping_marker(myLatlng,"Food Palace");
+
+               myLatlng = new google.maps.LatLng(12.925851, 77.675122);
+               add_shopping_marker(myLatlng,"Central Mall");
+
+               myLatlng = new google.maps.LatLng(12.925370, 77.674392);
+               add_shopping_marker(myLatlng,"Brewberrys");
+
+               myLatlng = new google.maps.LatLng(12.925704, 77.675229);
+               add_shopping_marker(myLatlng,"Cine Max");
+
+               myLatlng = new google.maps.LatLng(12.918767, 77.670216);
+               add_shopping_marker(myLatlng,"Spencer Hypermarket");
+
+               myLatlng = new google.maps.LatLng(12.911357, 77.675551);
+               add_shopping_marker(myLatlng,"NPL Sarjapur Zone");
+
+               
+          }
+
+
+          function add_hospital_marker(myLatlng, title){
+               
+                var infowindow = new google.maps.InfoWindow({
+                      content: "<p>"+title+"</p>"
+                  });
+
+                 var image = 'img/residences/map_icons/1_small.png';
+                 var marker = new google.maps.Marker({
+                      position: myLatlng,
+                      map: map,
+                      title:title,
+                      icon: image
+                  });
+
+                 google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(map,marker);
+                  });
+                
+                marker.setMap(null);
+
+                h_markers.push(marker);
+                h_infos.push(infowindow);
+
+          }
+
+
+          function add_college_marker(myLatlng, title){
+               
+                var infowindow = new google.maps.InfoWindow({
+                      content: "<p>"+title+"</p>"
+                  });
+
+                 var image = 'img/residences/map_icons/2_small.png';
+                 var marker = new google.maps.Marker({
+                      position: myLatlng,
+                      map: map,
+                      title:title,
+                      icon: image
+                  });
+
+                 google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(map,marker);
+                  });
+                
+                marker.setMap(null);
+
+                c_markers.push(marker);
+                c_infos.push(infowindow);
+
+          }
+
+          function add_transit_marker(myLatlng, title, dir){
+               
+                var infowindow = new google.maps.InfoWindow({
+                      content: "<p>"+title+"</p>"
+                  });
+
+                var image = '';
+
+
+                switch(dir){
+
+                  case 'up': image = 'img/residences/map_icons/3_small_up.png';
+                            break;
+
+                  case 'down': image = 'img/residences/map_icons/3_small_down.png';
+                            break;
+
+                  case 'right': image = 'img/residences/map_icons/3_small_right.png';
+                            break;
+
+                  case 'left':  image = 'img/residences/map_icons/3_small_left.png';
+                            break;
+
+                }
+
+                 
+                 var marker = new google.maps.Marker({
+                      position: myLatlng,
+                      map: map,
+                      title:title,
+                      icon: image
+                  });
+
+                 google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(map,marker);
+                  });
+                
+                marker.setMap(null);
+
+                t_markers.push(marker);
+                t_infos.push(infowindow);
+
+          }
+
+
+          function add_business_marker(myLatlng, title){
+               
+                var infowindow = new google.maps.InfoWindow({
+                      content: "<p>"+title+"</p>"
+                  });
+
+                 var image = 'img/residences/map_icons/4_small.png';
+                 var marker = new google.maps.Marker({
+                      position: myLatlng,
+                      map: map,
+                      title:title,
+                      icon: image
+                  });
+
+                 google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(map,marker);
+                  });
+                
+                marker.setMap(null);
+
+                b_markers.push(marker);
+                b_infos.push(infowindow);
+
+          }
+
+          
+
+          function add_shopping_marker(myLatlng, title){
+                
+                var infowindow = new google.maps.InfoWindow({
+                      content: "<p>"+title+"</p>"
+                  });
+
+                 var image = 'img/residences/map_icons/5_small.png';
+                 var marker = new google.maps.Marker({
+                      position: myLatlng,
+                      map: map,
+                      title:title,
+                      icon: image
+                  });
+
+                 google.maps.event.addListener(marker, 'click', function() {
+                    infowindow.open(map,marker);
+                  });
+                
+                marker.setMap(null);
+
+                s_markers.push(marker);
+                s_infos.push(infowindow);
+
+          }
+
+           
+
+
+
+           $('#map_residence_controls ul li').each(function(){
+
+                $(this).click(function(){
+
+                    var filter = $(this).children('a').attr('rel');
+                   
+
+                    switch(filter){
+                        case 'hospitals':
+
+                                       for (var i = 0; i < c_markers.length; i++) {
+
+                                            c_markers[i].setMap(null);
+                                        }
+
+                                        for (var i = 0; i < t_markers.length; i++) {
+
+                                            t_markers[i].setMap(null);
+                                        }
+
+                                        for (var i = 0; i < s_markers.length; i++) {
+
+                                            s_markers[i].setMap(null);
+                                        }
+
+                                        for (var i = 0; i < b_markers.length; i++) {
+
+                                            b_markers[i].setMap(null);
+                                        }
+
+                                        if(active_map_filter == filter){
+                                            
+                                             for (var i = 0; i < h_markers.length; i++) {
+
+                                                h_markers[i].setMap(null);
+                                            }
+                                        
+                                        }
+                                        else{
+
+                                            for (var i = 0; i < h_markers.length; i++) {
+
+                                                h_markers[i].setMap(map);
+                                            }
+                                        }
+
+                                        break;
+
+                        case 'colleges':
+                                        for (var i = 0; i < h_markers.length; i++) {
+
+                                            h_markers[i].setMap(null);
+                                        }
+
+                                        for (var i = 0; i < t_markers.length; i++) {
+
+                                            t_markers[i].setMap(null);
+                                        }
+
+                                        for (var i = 0; i < s_markers.length; i++) {
+
+                                            s_markers[i].setMap(null);
+                                        }
+
+                                        for (var i = 0; i < b_markers.length; i++) {
+
+                                            b_markers[i].setMap(null);
+                                        }
+
+                                        if(active_map_filter == filter){
+                                            
+                                             for (var i = 0; i < c_markers.length; i++) {
+
+                                                c_markers[i].setMap(null);
+                                            }
+                                        
+                                        }
+                                        else{
+
+                                            for (var i = 0; i < c_markers.length; i++) {
+
+                                                c_markers[i].setMap(map);
+                                            }
+                                        }
+
+
+                                        break;
+
+                        case 'business':
+                                        for (var i = 0; i < h_markers.length; i++) {
+
+                                            h_markers[i].setMap(null);
+                                        }
+
+                                        for (var i = 0; i < t_markers.length; i++) {
+
+                                            t_markers[i].setMap(null);
+                                        }
+
+                                        for (var i = 0; i < s_markers.length; i++) {
+
+                                            s_markers[i].setMap(null);
+                                        }
+
+                                        for (var i = 0; i < c_markers.length; i++) {
+
+                                            c_markers[i].setMap(null);
+                                        }
+
+                                        if(active_map_filter == filter){
+                                            
+                                             for (var i = 0; i < b_markers.length; i++) {
+
+                                                b_markers[i].setMap(null);
+                                            }
+                                        
+                                        }
+                                        else{
+
+                                            for (var i = 0; i < b_markers.length; i++) {
+
+                                                b_markers[i].setMap(map);
+                                            }
+                                        }
+
+
+                                        break;
+
+                        case 'transit':
+                                        for (var i = 0; i < h_markers.length; i++) {
+
+                                            h_markers[i].setMap(null);
+                                        }
+
+                                        for (var i = 0; i < b_markers.length; i++) {
+
+                                            b_markers[i].setMap(null);
+                                        }
+
+                                        for (var i = 0; i < s_markers.length; i++) {
+
+                                            s_markers[i].setMap(null);
+                                        }
+
+                                        for (var i = 0; i < c_markers.length; i++) {
+
+                                            c_markers[i].setMap(null);
+                                        }
+
+                                        if(active_map_filter == filter){
+                                            
+                                             for (var i = 0; i < t_markers.length; i++) {
+
+                                                t_markers[i].setMap(null);
+                                            }
+                                        
+                                        }
+                                        else{
+
+                                            for (var i = 0; i < t_markers.length; i++) {
+
+                                                t_markers[i].setMap(map);
+                                            }
+                                        }
+
+                                        break;
+
+
+                        case 'shopping':
+                                        for (var i = 0; i < h_markers.length; i++) {
+
+                                            h_markers[i].setMap(null);
+                                        }
+
+                                        for (var i = 0; i < b_markers.length; i++) {
+
+                                            b_markers[i].setMap(null);
+                                        }
+
+                                        for (var i = 0; i < t_markers.length; i++) {
+
+                                            t_markers[i].setMap(null);
+                                        }
+
+                                        for (var i = 0; i < c_markers.length; i++) {
+
+                                            c_markers[i].setMap(null);
+                                        }
+
+                                        if(active_map_filter == filter){
+                                            
+                                             for (var i = 0; i < s_markers.length; i++) {
+
+                                                s_markers[i].setMap(null);
+                                            }
+                                            
+                                        }
+                                        else{
+
+                                            for (var i = 0; i < s_markers.length; i++) {
+
+                                                s_markers[i].setMap(map);
+                                            }
+                                        }
+
+                                        break;
+
+
+                        default:
+
+                    }
+
+                     active_map_filter = filter;
+                });
+
+           })
+
+      </script>
+
+ <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-39325239-1', 'lapalazzo.in');
+		  ga('require', 'displayfeatures');
+          ga('send', 'pageview');
+
+        </script>
+    </body>
+</html>

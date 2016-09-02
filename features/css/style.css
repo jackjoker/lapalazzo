@@ -1,0 +1,324 @@
+/* Start: Recommended Isotope styles */
+
+/**** Isotope Filtering ****/
+
+.isotope-item {
+  z-index: 2;
+}
+
+.isotope-hidden.isotope-item {
+  pointer-events: none;
+  z-index: 1;
+}
+
+/**** Isotope CSS3 transitions ****/
+
+.isotope,
+.isotope .isotope-item {
+  -webkit-transition-duration: 0.8s;
+     -moz-transition-duration: 0.8s;
+      -ms-transition-duration: 0.8s;
+       -o-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+.isotope {
+  -webkit-transition-property: height, width;
+     -moz-transition-property: height, width;
+      -ms-transition-property: height, width;
+       -o-transition-property: height, width;
+          transition-property: height, width;
+}
+
+.isotope .isotope-item {
+  -webkit-transition-property: -webkit-transform, opacity;
+     -moz-transition-property:    -moz-transform, opacity;
+      -ms-transition-property:     -ms-transform, opacity;
+       -o-transition-property:      -o-transform, opacity;
+          transition-property:         transform, opacity;
+}
+
+/**** disabling Isotope CSS3 transitions ****/
+
+.isotope.no-transition,
+.isotope.no-transition .isotope-item,
+.isotope .isotope-item.no-transition {
+  -webkit-transition-duration: 0s;
+     -moz-transition-duration: 0s;
+      -ms-transition-duration: 0s;
+       -o-transition-duration: 0s;
+          transition-duration: 0s;
+}
+
+/* End: Recommended Isotope styles */
+
+
+
+/* disable CSS transitions for containers with infinite scrolling*/
+.isotope.infinite-scrolling {
+  -webkit-transition: none;
+     -moz-transition: none;
+      -ms-transition: none;
+       -o-transition: none;
+          transition: none;
+}
+
+
+/**** Isotope styles ****/
+
+/* required for containers to inherit vertical size from window */
+html,
+body {
+  height: 100%;
+}
+
+#tile_container {
+  /*border: 1px solid #666;*/
+  padding: 5px;
+  margin-bottom: 20px;
+
+  padding-bottom: 50px;
+}
+
+.element {
+
+  width: 270px;
+  height: 250px;
+  margin: 10px;
+  float: left;
+  overflow: hidden;
+  position: relative;
+  background: #888;
+  color: #222;
+
+  background: #1E1E1E;
+
+}
+
+.ft_thumb{
+
+
+  margin-top: -25%;
+  
+  -webkit-transition: all 1s ease;
+  -moz-transition: all 1s e ase;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;
+
+}
+
+.ft_thumb:hover{
+
+  margin-top: 0%;
+  
+ /* -webkit-transition: all 1s ease;
+  -moz-transition: all 1s e ase;
+  -ms-transition: all 1s ease;
+  -o-transition: all 1s ease;
+  transition: all 1s ease;*/
+
+}
+
+
+.ft_thumb img{
+
+  width: 120%;
+  max-width: none;
+
+}
+
+.ft_thumb.full{
+  margin-top: -5%;
+}
+
+
+.ft_thumb_title{
+
+  
+  background: #EEE5DE;
+  position: absolute;
+  bottom: 0;
+
+  width: 96%;
+  padding:4%;
+
+}
+
+
+.ft_thumb_title h3{
+
+  font-size: 14px;
+  line-height: 20px;
+  margin:0;
+  color:#9D162E;
+
+}
+
+.ft_thumb_title span{
+
+  font-size: 12px;
+
+}
+
+.ft_descp{
+
+  background: #EEE5DE; 
+  font-size: 12px;
+  padding: 8px;
+
+}
+
+.ft_descp h3{
+
+  margin:0;
+  line-height: 35px;
+  color:#9D162E;
+  font-size: 14px;
+
+}
+
+
+.variable-sizes .element.w2 { width: 560px; }
+.variable-sizes .element.w3 { width: 125px; }
+.variable-sizes .element.w4 { width: 560px; }
+
+
+.variable-sizes .element.h2 { height: 520px; }
+.variable-sizes .element.h3 { width: 125px; }
+.variable-sizes .element.h4 { width: 560px; }
+
+
+.element.large,
+.variable-sizes .element.large{
+ 
+  width: 560px;
+  /*height: 350px;*/
+  height: auto;
+  z-index: 100;
+}
+
+.element.large .ft_thumb,
+.variable-sizes .element.large .ft_thumb{
+
+-webkit-transition:none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition:none;
+  
+  height: 400px;
+  overflow: hidden;
+
+
+}
+
+
+.element.large .ft_thumb img,
+.variable-sizes .element.large .ft_thumb img{
+
+  width: 100%;
+  
+
+}
+
+
+
+/*.variable-sizes .element.width2 { width: 366px; }
+
+.variable-sizes .element.height2 { height: 280px; }
+
+.variable-sizes .element.width2.height2 {
+
+  font-size: 2.0em;
+
+}
+
+.element.large,
+.variable-sizes .element.large,
+.variable-sizes .element.large.width2.height2 {
+ 
+ width: 366px;
+ 
+  height: auto;
+  z-index: 100;
+}*/
+
+.clickable .element:hover {
+  cursor: pointer;
+}
+
+.clickable .element:hover h3 {
+  /*text-shadow:
+    0 0 10px white,
+    0 0 10px white
+  ;*/
+}
+
+.clickable .element:hover h2 {
+  color: white;
+}
+
+
+/* The Magnificent Clearfix: nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
+
+
+ @media(min-width:768px)  and (max-width: 979px){
+
+  .variable-sizes .element.size1, 
+  .variable-sizes .element.size2, 
+  .variable-sizes .element.size3, 
+  .variable-sizes .element.size4{
+
+      width: 320px;
+      height: 200px;
+
+   }
+
+
+
+  .element.large,
+  .variable-sizes .element.large,
+  .variable-sizes .element.large {
+   
+   width: 320px;
+    /*height: 350px;*/
+    height: auto;
+    z-index: 100;
+  }
+
+
+
+}
+
+ @media(max-width:767px){
+
+
+  .variable-sizes .element.size1, 
+  .variable-sizes .element.size2, 
+  .variable-sizes .element.size3, 
+  .variable-sizes .element.size4{
+
+    width: 90%;
+    height: 200px;
+
+  }
+
+
+
+  .element.large,
+  .variable-sizes .element.large,
+  .variable-sizes .element.large {
+   
+   width: 90%;
+    /*height: 350px;*/
+    height: auto;
+    z-index: 100;
+  }
+
+
+}
+

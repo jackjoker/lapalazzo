@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="js/jquery-1.4.2.min.js"></script>
+<script>
+$('ul li').mouseenter(function(){
+    var image= $(this).find('img'),
+        caption = $(this).find('div');
+    
+    caption.width(image.width());
+    caption.height(image.height());
+    caption.fadeIn();
+}).mouseleave(function(){
+     var image= $(this).find('img'),
+        caption = $(this).find('div');
+    
+    caption.width(image.width());
+    caption.height(image.height());
+    caption.fadeOut();
+});
+</script>
+
+</head>
+
+<body>
+
+<ul>
+  <li>
+        <div class="caption">this is my caption</div>
+      <img src="images/ramesh_bulchandani-image2.png" width="70" height="70"/></li>
+    
+</ul>
+
+</body>
+</html>
