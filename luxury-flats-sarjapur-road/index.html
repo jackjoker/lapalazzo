@@ -113,17 +113,61 @@ src="https://www.facebook.com/tr?id=654412788041582&ev=PageView&noscript=1"
 
       
       <section class="banner">
-          <div class="bnr-hold">
-              <img src="images/Landing-Page-Banner.jpg" title="La Palazzo Residences - Luxury 4BHK Apartments in Sarjapur road" alt="La Palazzo's majestic 14 floors - apartments for sale in sarjapur road" class="img-responsive" />
-              <div class="container">
-              <div class="bnr-content">
+      <div id="myCarousel" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+    <li data-target="#myCarousel" data-slide-to="1"></li>
+    <li data-target="#myCarousel" data-slide-to="2"></li>
+   
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <div class="item active">
+      <img src="images/Landing-Page-Banner.jpg" alt="...." class="img-responsive">
+      <div class="carousel-caption">
+         <div class="bnr-content">
                   <h1>Discover A Home That Keeps Work & Family Close</h1>
                   <h3>3.5, 4BHK Luxury Residences in Bangalore Starting from 2.5 Crores</h3>
               </div>
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/banner-image-2.jpg" alt="..." class="img-responsive">
+      <div class="carousel-caption">
+         <div class="bnr-content">
+                  <h1>Discover A Home That Keeps Work & Family Close</h1>
+                  <h3>3.5, 4BHK Luxury Residences in Bangalore Starting from 2.5 Crores</h3>
               </div>
-          </div>
-      </section>
-      <section class="call-me">
+      </div>
+    </div>
+
+    <div class="item">
+      <img src="images/banner-image-3.jpg" alt="...." class="img-responsive">
+      <div class="carousel-caption">
+         <div class="bnr-content">
+                  <h1>Discover A Home That Keeps Work & Family Close</h1>
+                  <h3>3.5, 4BHK Luxury Residences in Bangalore Starting from 2.5 Crores</h3>
+              </div>
+      </div>
+    </div>
+
+   
+  </div>
+
+  <!-- Left and right controls -->
+  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+ <section class="call-me">
           <div class="container">
               <div class="row">
               <div class="form" id="call">
@@ -154,6 +198,45 @@ src="https://www.facebook.com/tr?id=654412788041582&ev=PageView&noscript=1"
           </div>
           </div>
       </section>
+        <!--   <div class="bnr-hold">
+              <img src="images/Landing-Page-Banner.jpg" title="La Palazzo Residences - Luxury 4BHK Apartments in Sarjapur road" alt="La Palazzo's majestic 14 floors - apartments for sale in sarjapur road" class="img-responsive" />
+              <div class="container">
+              <div class="bnr-content">
+                  <h1>Discover A Home That Keeps Work & Family Close</h1>
+                  <h3>3.5, 4BHK Luxury Residences in Bangalore Starting from 2.5 Crores</h3>
+              </div>
+              </div>
+          </div> -->
+      </section>
+     <!--  <section class="call-me">
+          <div class="container">
+              <div class="row">
+              <div class="form" id="call">
+          <h4>SPEAK TO AN EXPERT</h4>
+              <form class="clearfix" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onSubmit="return callMeValidate(this);">
+                    <input type=hidden name="oid" value="00D90000000kxJZ">
+                    <input type=hidden name="retURL" value="http://lapalazzo.in/luxury-flats-sarjapur-road/thank-you.html">
+                    
+                   
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <input type="text" class="form-control" placeholder="Name" id="name" maxlength="40" name="first_name" size="20" onKeyPress="return onlyAlphabets(event)">
+                </div>
+                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                <input type="text" class="form-control" placeholder="Phone Number" id="mob" maxlength="40" name="mobile" size="20" onKeyPress="return isNumberKey(event)">
+                </div>
+               
+                <select  id="lead_source" name="lead_source" hidden>
+                  <option value="Online">Online</option>
+                </select> 
+                <div class="col-lg-2 col-md-2 col-sm-2 col-xs-12">
+                <button type="submit" class="btn btn-default">Call Me</button>
+                </div>
+ <div><span class="error" id="m_err"></span></div>
+          </form>
+          </div>
+          </div>
+          </div>
+      </section> -->
       <a href="#call" class="top" ><img src="images/floating-call.png"></a>
       <section class="location">
           <div class="container">
@@ -179,7 +262,31 @@ src="https://www.facebook.com/tr?id=654412788041582&ev=PageView&noscript=1"
           <h2>Connectivity and Transit</h2>
           <div class="container">
               <div class="row">
-                  <div class="col-lg-4 col-md-4 col-sm-4">
+             <ul class="conn-hold-box">  <li>
+                      <div class="conn-hold">
+                      <figure>
+                          <img src="images/connectivity/hsr.jpg" title="Koramangala - Luxury flats in Koramangala" alt="Koramangala at a short distance away - luxury apartments for sale in Koramangala" class="img-responsive" />
+                      <figcaption>
+                          <h3>HSR LayouT</h3>
+                          <h5>4 Kms</h5>
+                      </figcaption>
+                      </figure>
+              
+                  </div>
+                  </li>
+                   <li>
+                      <div class="conn-hold">
+                      <figure>
+                          <img src="images/connectivity/domlur.jpg" title="Koramangala - Luxury flats in Koramangala" alt="Koramangala at a short distance away - luxury apartments for sale in Koramangala" class="img-responsive" />
+                      <figcaption>
+                          <h3>Domlur</h3>
+                          <h5>10 Kms</h5>
+                      </figcaption>
+                      </figure>
+              
+                  </div>
+                  </li>
+                  <li>
                       <div class="conn-hold">
                       <figure>
                           <img src="images/connectivity/1-sarjapur-road-apartments-for-sale.jpg" title="Koramangala - Luxury flats in Koramangala" alt="Koramangala at a short distance away - luxury apartments for sale in Koramangala" class="img-responsive" />
@@ -190,8 +297,8 @@ src="https://www.facebook.com/tr?id=654412788041582&ev=PageView&noscript=1"
                       </figure>
               
                   </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-4">
+                  </li>
+                  <li>
                   <div class="conn-hold">
                       <figure>
                       <img src="images/connectivity/2-flats-in-sarjapur-road-bangalore-for-sale.jpg" title="Electronic City - Luxury apartments near Koramangala" alt="Electronic City - flats near Koramangala for sale" class="img-responsive" />
@@ -202,8 +309,8 @@ src="https://www.facebook.com/tr?id=654412788041582&ev=PageView&noscript=1"
                       </figure>
               
                   </div>
-                  </div>
-                  <div class="col-lg-4 col-md-4 col-sm-4">
+                  </li>
+                  <li>
                   <div class="conn-hold">
                       <figure>
                       <img src="images/connectivity/3-flats-in-sarjapur-road-for-sale.jpg" title="Whitefield - Luxury 4bhk apartments in Koramangala" alt="Whitefield - 4bhk apartments in Koramangala for sale" class="img-responsive" />
@@ -214,7 +321,8 @@ src="https://www.facebook.com/tr?id=654412788041582&ev=PageView&noscript=1"
                       </figure>
               
                   </div>
-                  </div>
+                  </li>
+                  </ul>
               </div>
           </div>
       </section>
@@ -231,6 +339,10 @@ src="https://www.facebook.com/tr?id=654412788041582&ev=PageView&noscript=1"
                   </div>
                   <div class="col-lg-6 col-md-6 col-sm-6 pad0">
                       <table class="nearby-places">
+                      <tr class="pad-top">
+                              <td>Columbia Asia Hospital</td>
+                              <td>1.5 Km</td>
+                          </tr>
                           <tr class="pad-top">
                               <td>RMZ Ecospace</td>
                               <td>4 Km</td>

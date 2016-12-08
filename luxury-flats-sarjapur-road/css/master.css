@@ -48,6 +48,11 @@ ul.nav.navbar-nav.navbar-right li p,  ul.nav.navbar-nav.navbar-right li a {
     text-transform: uppercase;padding: 0 0 0 2px;
     /*font-family: 'DIN-Medium';*/
 }
+.conn-hold-box li{ display: inline-block; list-style-type: none; padding: 15px }
+.carousel-control.right, .carousel-control.left{ background:none !important; }
+.carousel-caption{ text-shadow: none !important ; bottom: 0 !important}
+.carousel-inner>.item>img, .carousel-inner>.item>a>img{ width: 100% }
+.conn-tran h3{ font-size: 18px }
 .bnr-hold {
     position: relative;
 }
@@ -435,13 +440,17 @@ footer p {
 
 /*responsive*/
 @media(min-width:992px) and (max-width:1199px){
+    .bnr-content h3{font-size: 22px;
+    padding: 0 10px;
+    line-height: 26px;}
+    .carousel-indicators{ display: none; }
     .bnr-content {
      padding: 50px 0 40px;
    }
     .bnr-content h1 {
     max-width: 450px;
-    line-height: 45px;
-    font-size: 40px !important;
+    line-height: 35px;
+    font-size: 30px !important;
 }
 .bnr-content h3, .location-cont h3, .conn-tran h3, .conn-img h3{
     font-size: 22px;
@@ -506,6 +515,8 @@ section.enquire textarea {
 }
 }
 @media(min-width:768px) and (max-width:991px){
+    .carousel-indicators{ display: none; }
+
     .bnr-content {
     padding: 30px 0 30px;
 }
@@ -523,12 +534,12 @@ ul#features_tabs {
 }
 .bnr-content h1 {
     width: 400px;
-    line-height: 40px;
+    line-height: 30px;
     padding-bottom: 18px;
-    font-size: 36px !important;
+    font-size: 24px !important;
 }
 .bnr-content h3, .location-cont h3, .conn-tran h3, .conn-img h3{
-    font-size: 22px;
+    font-size: 22px;    line-height: 30px;
 }
 input.form-control,.call-me button.btn.btn-default, .enquire button, .enquire button.btn-default :hover, .enquire button.btn-default :focus{
     height: 45px; min-height: 45px}
@@ -879,9 +890,22 @@ ul.nav.navbar-nav.navbar-right {
     float: right;
 }
 }
+@media (max-width:767px)
+{
+.conn-hold-box li{ width: 100% }
+.carousel-caption{ position: static !important; padding-top: 0 !important }
+.carousel-control{ display: none; }
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #BA954A !important;
+}
+.carousel-indicators li{ border: 1px solid #BA954A !important; }
+}
 @media screen and (max-width:359px)
 {
-
+.conn-hold-box li{ width: 100% }
 .features.visible-xs ul.nav-tabs>li {
     float: none;
     margin-bottom: -1px;
@@ -1078,4 +1102,5 @@ ul.nav.navbar-nav.navbar-left {
 ul.nav.navbar-nav.navbar-right {
     float: right;
 }
-}
+
+
