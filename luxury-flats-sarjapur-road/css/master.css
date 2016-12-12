@@ -23,6 +23,7 @@ header {
     padding: 40px 0;
     
 }
+.carousel-caption{ left: 0 !important; right: 0 !important }
 .lp header .navbar-default {
     background-color: transparent !important;
     border-color: transparent !important;
@@ -64,7 +65,7 @@ ul.nav.navbar-nav.navbar-right li p,  ul.nav.navbar-nav.navbar-right li a {
     bottom: 0;
     left: 0;
     right: 0;
-    max-width: 1170px;
+    /*max-width: 1170px;*/
     background-color: rgba(225,225,225,0.7);
     margin: 0 auto;
     padding: 60px 0 60px;
@@ -156,7 +157,7 @@ section.call-me {
 }
 .location-cont {
     background-color: #BA954A;
-    padding: 60px 80px 60px;
+    padding: 60px 30px 60px;
     text-align: center;
     margin: 0 auto;
 }
@@ -220,7 +221,7 @@ section.hubs {
 }
 .kmb-banner{
      background-image: url('../images/kmb-banner.jpg');
-     height:524px;
+     height:518px;
      background-repeat: no-repeat;
       background-size: cover;
 }
@@ -232,7 +233,7 @@ img.img-responsive.kmb-logo {
 }
 .kmb-content{
     height: 524px; 
-    padding: 80px 0 80px 60px;
+    padding:20px;
     text-align: left;
     max-width: 710px;
 }
