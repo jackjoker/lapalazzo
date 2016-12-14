@@ -157,7 +157,7 @@ section.call-me {
 }
 .location-cont {
     background-color: #BA954A;
-    padding: 60px 30px 60px;
+    padding: 81px 30px 60px;
     text-align: center;
     margin: 0 auto;
 }
@@ -187,7 +187,7 @@ section.conn-tran h2 {
 }
 .conn-tran h3{ color: #343434; text-transform: uppercase; padding-bottom: 10px;}
 .conn-img {
-    background-image: url('../images/hubs.jpg');
+    background-image: url('../images/map1.jpg');
     height: 447px;
     display: table;
     background-repeat: no-repeat;
@@ -204,7 +204,8 @@ section.conn-tran h2 {
     color: #fff;
     text-transform: uppercase;
     text-align: center;
-    line-height: 35px;
+    line-height: 35px;background-color: #000;
+    opacity: 0.5;
 }
 .nearby-places {
     background-color: #ede9e9;
