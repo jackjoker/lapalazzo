@@ -23,6 +23,16 @@ header {
     padding: 40px 0;
     
 }
+.conn-tran .carousel-caption {
+    text-shadow: none !important;
+    bottom: -35px !important;
+}
+.conn-tran .carousel-inner>.item>img{ width: auto; margin: 0 auto }
+.conn-tran .carousel-control:hover, .conn-tran .carousel-control:focus, .conn-tran .carousel-control{ opacity: 1 }
+.conn-tran .carousel-control{ top: 40% }
+
+.conn-tran .carousel-caption{ background-color: #fff; width: 300px; margin: 0 auto }
+.conn-tran p{    color: #343434; }
 .carousel-caption{ left: 0 !important; right: 0 !important }
 .lp header .navbar-default {
     background-color: transparent !important;
@@ -176,9 +186,9 @@ section.conn-tran {
     text-align: center;
     padding: 80px 0;
 }
-.conn-tran img {
+/*.conn-tran img {
     margin: 0 auto 30px;
-}
+}*/
 section.conn-tran h2 {
     text-transform: uppercase;
     color: #ba954a;
@@ -897,6 +907,12 @@ ul.nav.navbar-nav.navbar-right {
 .conn-hold-box li{ width: 100% }
 .carousel-caption{ position: static !important; padding-top: 0 !important }
 .carousel-control{ display: none; }
+.conn-tran .carousel-control { display: block; }
+.conn-tran .carousel-control {
+    top: 25%;
+}
+.conn-tran .carousel-caption{ padding-top: 20px !important}
+.conn-tran .carousel-control img{ height: 40px }
 .carousel-indicators .active {
     width: 12px;
     height: 12px;
