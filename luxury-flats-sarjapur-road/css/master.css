@@ -27,6 +27,7 @@ header {
     text-shadow: none !important;
     bottom: -35px !important;
 }
+.carousel-control{ background:none !important; }
 .conn-tran .carousel-inner>.item>img{ width: auto; margin: 0 auto }
 .conn-tran .carousel-control:hover, .conn-tran .carousel-control:focus, .conn-tran .carousel-control{ opacity: 1 }
 .conn-tran .carousel-control{ top: 40% }
@@ -630,7 +631,14 @@ img.img-responsive.kmb-logo {
 .conn-img h3 {
     padding: 0 50px;}
 }
-@media(max-width:767px){
+@media (min-width:1280px) and (max-width:1366px){
+    .kmb-banner{
+     background-image: url('../images/kmb-banner.jpg');
+     height:447px;
+     background-repeat: no-repeat;
+      background-size: cover;
+}}
+@media (max-width:767px){
     .top {
     bottom: 30px;
     cursor: pointer;
