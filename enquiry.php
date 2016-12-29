@@ -7,7 +7,7 @@
         
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>Premium apartments in Sarjapur Road | Luxury Apartments in Sarjapur Bangalore | Sarjapur Road Apartments | New Apartments in Sarjapur Road for sale- LaPalazzo </title>
+        <title>Premium apartments in Sarjapur Road|Luxury Apartments in Sarjapur|3BHK Apartments for sale in Sarjapur|3bhk Apartments in Domlur|4BHK Apartments in Koramangala for sale|New Apartments in Sarjapur Road for sale- LaPalazzo </title>
         
         <meta name="description" content="Contact La Palazzo at: 
         Sales Office, Gate No 2,
