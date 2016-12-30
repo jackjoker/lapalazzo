@@ -98,11 +98,11 @@ src="https://www.facebook.com/tr?id=654412788041582&ev=PageView&noscript=1"
       
       <ul class="nav navbar-nav navbar-right">
           <li class="hidden-xs">
-          <p class="navbar-text navbar-right">Call  <a href="tel:93411 12343" >93411 12343</a></p>
+          <p class="navbar-text navbar-right">Call  <a href="tel:93411 12343" onClick="ga('send', 'event', { eventCategory: 'Call button', eventAction: 'Click', eventLabel: 'Call lead', eventValue: 1});">93411 12343</a></p>
       
         </li>
         <li class="visible-xs">
-            <a href="tel:93411 12343"><img src="images/call-xs.png" alt="" /></a>
+            <a href="tel:93411 12343" onClick="ga('send', 'event', { eventCategory: 'Call button', eventAction: 'Click', eventLabel: 'Call lead', eventValue: 1});"><img src="images/call-xs.png" alt="" /></a>
         </li>
       </ul>
     </div><!-- /.navbar-collapse -->
