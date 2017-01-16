@@ -1,0 +1,90 @@
+.main-menu .navbar {
+    z-index: 5;
+}
+.main-menu .navbar-inverse {
+    border-color: transparent;
+    background-color: rgba(101,128,151,0.4);
+	
+}
+.main-menu .navbar-inverse .navbar-inner {
+
+    background-image: none;
+}
+.main-menu .nav-list {
+    padding-right: 0;
+}
+main-menu .navbar .nav {
+    margin-right: 0;
+}
+.main-menu .navbar .nav li.active a {
+    background: #333;
+    color: #fff;
+}
+.main-menu .navbar .nav li a {
+    padding-top: 14px;
+    font-size: 12px;
+}
+a:link {
+    outline: none;
+    bordr: none;
+}
+.main-menu #nav_main ul li a:hover{
+    color: #e1cd69;
+}
+.main-menu #nav_main ul li a:focus{
+    color: #e1cd69;
+    background-color:transparent;
+}
+.main-menu .nav>li>a:hover, .nav>li>a:focus {
+    background-color:transparent;
+    color: #e1cd69;
+}
+.main-menu .navbar .nav li.always_active a {
+    background: #9D162E;
+    color: #FFF;
+}
+.main-menu .navbar .nav li a {
+    padding-top: 25px;
+    font-size: 12px;
+    padding: 25px 15px;
+    font-family: 'Dosis', sans-serif;
+}
+#nav_main ul li{
+    display:inline-block;
+}
+.main-menu .navbar .nav>li>a {
+    float: none;
+    color: #fff;
+    text-decoration: none;}
+.main-menu .navbar .brand {
+    display: block;
+    float: left;
+    padding: 15px 20px;
+    margin-left: -20px;
+    font-size: 20px;
+    font-weight: 200;
+    color: #777;
+    text-shadow: 0 1px 0 #fff;
+}
+.main-menu .navbar{
+    min-height: 41px;
+}
+.sarjapur header {
+    top: 10px;
+}
+.location-cont a{
+    border: 1px solid transparent;
+    background-color: #fff;
+    color: #000;
+    text-transform: uppercase;
+    padding: 15px 60px;
+    margin-top: 20px;
+    display: inline-block;
+    font-family: 'Dosis', sans-serif;
+
+}
+.location-cont a:hover{
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #000;
+}
