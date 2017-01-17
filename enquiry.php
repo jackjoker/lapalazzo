@@ -102,6 +102,7 @@ var google_remarketing_only = true;
                             <ul class="nav">
                               <li><a href="index.html">HOME</a></li>
                                 <li><a href="/residences-apartments-sarjapur-road.html">RESIDENCES</a></li>
+                                <li><a href="/luxury-flats-sarjapur-road/" target="_blank" title="Residences of La Palazzo - Luxury apartments for sale in Sarjapur Bangalore">SARJAPUR</a></li>
                                 <li><a href="/master-plan-3-4-bhk-luxury-apartment-sarjapur-road.html">PLANS</a></li>
                                 <li><a href="/features-3BHK-luxury-flats-sarjapur-road.html">FEATURES</a></li>
                                 <li><a href="/about-apartment-near-sarjapur-road.html">KMB GROUP</a></li>
