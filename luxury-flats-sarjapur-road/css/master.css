@@ -30,7 +30,7 @@ header {
 .carousel-control{ background:none !important; }
 .conn-tran .carousel-inner>.item>img{ width: auto; margin: 0 auto }
 .conn-tran .carousel-control:hover, .conn-tran .carousel-control:focus, .conn-tran .carousel-control{ opacity: 1 }
-.conn-tran .carousel-control{ top: 40% }
+.conn-tran .carousel-control{ top: 80px; }
 
 .conn-tran .carousel-caption{ background-color: #fff; width: 300px; margin: 0 auto }
 .conn-tran p{    color: #343434; }
@@ -74,13 +74,16 @@ ul.nav.navbar-nav.navbar-right li p,  ul.nav.navbar-nav.navbar-right li a {
 .bnr-content {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: -300px;
     right: 0;
     /*max-width: 1170px;*/
     background-color: rgba(225,225,225,0.7);
     margin: 0 auto;
     padding: 60px 0 60px;
     text-align: center;
+}
+.bnr-content.thnk-txt {
+    left: 0;
 }
 .bnr-content h1 {
     width: 715px;
@@ -90,12 +93,14 @@ ul.nav.navbar-nav.navbar-right li p,  ul.nav.navbar-nav.navbar-right li a {
     color: #343434 ;
     text-transform: uppercase;
     padding-bottom: 15px;
+    letter-spacing: -3px;
 }
 .bnr-content h3 {
     color: #af8125;
     text-transform: uppercase;
     font-size: 24px;
     line-height: 17px;
+    margin-top: 2px;
 }
 
 .form {
@@ -103,16 +108,20 @@ ul.nav.navbar-nav.navbar-right li p,  ul.nav.navbar-nav.navbar-right li a {
     background-color: #343434;
     padding: 40px 20px 35px;
     color: #fff;
+    margin-bottom: 40px;
+    margin-top: -98px;
+
 }
 .form h4 {
     text-align: center;
-    padding-bottom: 30px;
-    line-height: 14px;
+    padding-bottom: 18px;
+    line-height: 3px;
+font-family: 'Dosis', sans-serif;
 }
 input.form-control {
     display: block;
     width: 100%;
-    height: 50px;
+     height: 40px;
     padding: 6px 12px;
     font-size: 14px;
     line-height: 1.42857143;
@@ -126,6 +135,7 @@ input.form-control {
     -webkit-transition: none;
     -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
     transition: none;
+    font-family: 'Dosis', sans-serif;
 }
 .call-me button.btn.btn-default, .enquire button, .enquire button.btn-default :hover,.enquire button.btn-default :focus{
     display: inline-block;
@@ -162,6 +172,12 @@ input.form-control {
 
 .inp-hold {
     position: relative;
+    width: 288px;
+    height: 117px;
+    line-height: 1.2em;
+    color: #343434;
+  
+  
 }
 section.call-me {
     margin-bottom: 35px;
@@ -172,6 +188,14 @@ section.call-me {
     text-align: center;
     margin: 0 auto;
 }
+.location-vid {
+    background-color: #BA954A;
+    padding: 81px 30px 60px;
+    text-align: center;
+    margin: 0 auto;
+    height: 250px;
+}
+
 .location-cont figure img {
     text-align: center;
     margin: 0 auto 25px;
@@ -195,8 +219,9 @@ section.conn-tran h2 {
     color: #ba954a;
     line-height: 25px;
     padding-bottom: 60px;
+    font-family: 'Dosis', sans-serif;
 }
-.conn-tran h3{ color: #343434; text-transform: uppercase; padding-bottom: 10px;}
+.conn-tran h3{ color: #343434; text-transform: uppercase; padding-bottom: 10px; padding-top: 14px;}
 .conn-img {
     background-image: url('../images/map1.jpg');
     height: 447px;
@@ -221,11 +246,12 @@ section.conn-tran h2 {
 .nearby-places {
     background-color: #ede9e9;
     width: 100%;
-    height: 447px;
+    height: 460px;
     color: #343434;
     text-transform: uppercase;
     font-size: 16px;
     line-height: 13px;
+    font-family: 'Dosis', sans-serif;
 }
 .nearby-places td{ padding-left: 50px}
 section.hubs {
@@ -244,11 +270,57 @@ img.img-responsive.kmb-logo {
     transform: translateY(-50%);
 }
 .kmb-content{
+    background-color: #ede9e9;
     height: 524px; 
     padding:20px;
     text-align: left;
     max-width: 710px;
 }
+.kmb-content-vid{
+    /*background-color: #ede9e9;*/
+    background-color: #343434;
+    color:#fff;
+    height: 250px; 
+    padding:20px;
+    text-align: left;
+    
+}
+.kmb-content-vid p{
+    font-size: 22px;
+    font-family: 'Dosis', sans-serif;
+    line-height: 26px;
+    margin-bottom: 35px !important;
+}
+.vid-color{
+    color: #777;
+}
+#callTop{
+  position: absolute;
+  width: 360px;
+  top: 219px;
+  right: 46px;
+  z-index: 11;
+}
+
+input.form-control1 {
+  display: block;
+  width: 100%;
+  height: 37px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: none;
+  border-radius: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  -webkit-transition: none;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: none;
+}
+
 .kmb-content p {
     padding-bottom: 20px;
 }
@@ -258,6 +330,7 @@ img.img-responsive.kmb-logo {
 section.features {
     padding: 80px 0;
     background-color: #f1e6cf;
+    margin-top: 100px;
 }
 
 .enquire {
@@ -303,12 +376,14 @@ section.enquire h2 {
     padding: 20px 65px;
     text-transform: uppercase;
     color: #BA954A;
+    font-family: 'Dosis', sans-serif;
 }
 
 .features ul.nav>li:hover>a, .features ul.nav>li:active>a, .features ul.nav>li.active>a, .features ul.nav>li:focus>a{
    background-color: #BA954A;
     color: #fff;
-    border: none
+    border: none;
+    font-family: 'Dosis', sans-serif;
 }
 .features .tab-content ul.nav>li:hover>a, .features .tab-content ul.nav>li:active>a, .features .tab-content ul.nav>li.active>a, .features .tab-content ul.nav>li:focus>a{ color: #BA954A}
 .features ul.nav>li:hover>a:after, .features ul.nav>li:active>a:after, .features ul.nav>li.active>a:after, .features ul.nav>li:focus>a:after {
@@ -558,7 +633,7 @@ input.form-control,.call-me button.btn.btn-default, .enquire button, .enquire bu
     height: 45px; min-height: 45px}
 
 section.call-me {
-    margin-bottom: 25px;
+    margin-bottom: 52px;
 }
 .location-cont {
     padding: 20px;
@@ -968,6 +1043,21 @@ ul.nav.navbar-nav.navbar-right {
     display: block;
      font-size: 12px
 }
+.enquiry-button{
+    background-color: #BA954A;
+    border: none;
+    border-radius: 0;
+    color: #fff;
+    width: 100%;
+    padding: 10px;
+    margin-top: 17px;
+}
+
+.img-circle {
+    border-radius: 50%;
+}
+
+
 .form h4{ font-size: 14px;padding-bottom: 15px;}
 section.call-me {
     margin-bottom: 10px;
@@ -986,6 +1076,9 @@ section.location {
 .location-cont figure img {
     margin: 0 auto 15px;
     width: 30px;
+}
+.vide{
+    color: #BA954a;
 }
 .location-cont p {
     font-size: 12px;
@@ -1017,8 +1110,12 @@ section.conn-tran h2, section.conn-tran h2{
     width: 50%;
 }
 .conn-tran h3 {
-    padding-bottom: 6px;
-    font-size: 12px
+    
+      color: #343434;
+      text-transform: uppercase;
+      padding-bottom: 10px;
+      padding-top: 20px;
+}
 }
 .conn-tran h5{ font-size: 12px}
 
@@ -1036,14 +1133,15 @@ section.hubs {
     margin-bottom: 30px;
     padding: 0 15px;
 }
-.nearby-places{ height: auto}
+/*.nearby-places{ height: auto}*/
 .nearby-places td {
     padding-left: 20px;
-    font-size: 12px;
+    font-size: 16px;
     padding-top: 15px;
 }
 tr.pad-top td {
     padding-top: 20px;
+    font-family: 'Dosis', sans-serif;
 }
 tr.pad-btm td {
     padding-bottom: 20px;
@@ -1072,10 +1170,10 @@ section.features {
     background-image: none;
     height: auto;    padding: 30px 0 0;}
 
-.kmb-content h4{ font-size: 14px; padding-bottom: 15px}
+.kmb-content h4{ font-size: 18px; padding-bottom: 14px}
 .kmb-content p {
     padding-bottom: 10px;
-    font-size: 12px
+      font-size: 16px;
 }
 img.img-responsive.kmb-logo {
     position: static;
@@ -1101,7 +1199,8 @@ section.enquire textarea {
     padding: 12px;
 }
 .tab-content figure figcaption p {
-    font-size: 12px;
+    font-size: 16px;
+    font-family: 'Dosis', sans-serif;
 }
 footer p {
     padding-bottom: 5px;
@@ -1129,5 +1228,50 @@ ul.nav.navbar-nav.navbar-right {
     float: right;
 }
 
+.closer-places-holder{
+    text-align: center;
+}
+.closer-places{
+    width: 18%;
+    display: inline-block;
+}
+.closer-places img{
+    width: 130px;
+    margin-bottom: 15px;
+}
+.closer-places h3{
+    font-family: 'Dosis', sans-serif;
+    font-size: 14px;
+    margin-bottom: 7px !important;
+    padding-bottom: 0 !important;
+    font-weight: 500;
+}
+.closer-places p{
+    font-family: 'Dosis', sans-serif;
+    font-size: 13px;
+    color: #cdcdcd;
+    text-transform: uppercase;
+}
+.select-txt{
+  padding: 0px;
+  width: 100%;
+  padding: 2%;
+  height: 35px;
+  border-radius: 0;
+  font:inherit;
+  color: #343434;
+  -webkit-border-radius: 0;
+}
+
+.para-holder {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.para-holder p{
+    font-family: 'Dosis', sans-serif;   
+}
+.error{
+    color:red;
+}
 
         
