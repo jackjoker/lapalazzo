@@ -117,6 +117,26 @@ a:link {
   color: #343434;
 
 }
+ul.inner-list li{
+        list-style: none;
+}
+ul.inner-list li a{
+        list-style: none;
+        padding: 15px 20px;
+    background-color: transparent;
+    color: #000;
+    border: none;
+        margin-right: 0;
+    line-height: 12px;
+    border: none;
+    border-radius: 0 0;
+    display: inline-block;
+    position: relative;
+    text-transform: uppercase;
+    font-family: 'Dosis', sans-serif;
+}
+ul.inner-list li a:hover{ color: #BA954A;}
+ol.txt-style li{    font-family: 'Dosis', sans-serif;    color: #343434; font-size: 16px; margin-bottom: 4px;}
 
  @media only screen and (max-width: 359px) {
 
