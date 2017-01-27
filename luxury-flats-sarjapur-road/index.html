@@ -126,29 +126,29 @@
         <div class="form" id="callTop">
             <h4>Enquire Now</h4>
             <form class="clearfix" action="https://www.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST" onSubmit="return enquireValidate(this);">
-               <input type=hidden name="oid" value="00D90000000kxJZ">
-               <input type=hidden name="retURL" value="http://lapalazzo.in/luxury-flats-sarjapur-road/thank-you.html">
+                <input type=hidden name="oid" value="00D90000000kxJZ">
+                <input type=hidden name="retURL" value="http://lapalazzo.in/luxury-flats-sarjapur-road/thank-you.html">
                 <!--  <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12"> -->
                 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
                     <input type="text" class="form-control1" placeholder="Name *" id="first_name" maxlength="40" name="first_name" size="35" onKeyPress="return onlyAlphabets(event)"></br>
-                     <span class="error" id="nam_err"></span>
+                    <span class="error" id="nam_err"></span>
                     <input type="text" class="form-control1" placeholder="E-mail *" id="email" maxlength="40" name="email" size="15"><br>
                     <span class="error" id="email_err"></span>
                     <input type="text" class="form-control1" placeholder="Contact No *" id="mobile" maxlength="40" name="mobile" size="15" onKeyPress="return isNumberKey(event)">
-                     <span class="error" id="mob_err"></span>
+                    <span class="error" id="mob_err"></span>
 
                     <br>
-                    
-                    
+
+
 
                     <textarea class="inp-hold form-control1" id="message" name="message" cols="34" placeholder="Message"></textarea><br>     <br>
-                     <span class="error" id="mes_err"></span>
+                    <span class="error" id="mes_err"></span>
 
-                   <a type="submit" class="enquiry-button">Book my site visit</a>                                
+                    <button type="submit" class="enquiry-button" onClick="ga('send', 'event', {eventCategory: 'Callme', eventAction: 'Click', eventLabel: 'callmelead', eventValue: 1});">Book my site visit</button>                                
                 </div>
         </div><br>
         <div><span class="error" id="enq_err"></span></div>
-       
+
     </form>
 </div>
 
@@ -199,24 +199,24 @@
                 </div>
             </div>
         </div> 
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-        <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-        <span class="sr-only">Next</span>
-    </a>
-</div>
+        <!-- Left and right controls -->
+        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
 
 
 </section>
 <section class="call-me">
-    
+
 </section>
 
-<a href="tel:+91 93411 12343" class="top" style="display: none;"><img src="images/floating-call.png"></a>
+<a href="tel:+91 93411 12343" class="top-call" style="display: none;"><img src="images/floating-call.png"></a>
 <section class="location">
     <div class="container">
         <div class="row">
@@ -320,14 +320,14 @@
             </div>
         </div>
 
-      
+
     </div>
 </section>
 <section class="hubs">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 col-md-6 col-sm-6 pad0">
-                
+
                 <div class="location-map">
                     <img src="images/map.jpg" title="La Palazzo Residences Location Map - 4BHK Apartments Sarjapur road" alt="La Palazzo Residences Location - luxury flats for sale in Koramangala" class="img-responsive">
                 </div>
@@ -391,7 +391,7 @@
                     <input type=hidden name="oid" value="00D90000000kxJZ">
                     <input type=hidden name="retURL" value="http://lapalazzo.in/luxury-flats-sarjapur-road/thank-you.html">
 
-                   
+
                     <div class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
                         <input type="text" class="form-control" placeholder="Name" id="name" maxlength="40" name="first_name" size="20" onKeyPress="return onlyAlphabets(event)">
                     </div>
@@ -401,7 +401,7 @@
                     <!-- <label for="lead_source">Lead Source</label> -->
 
                     <div class="col-lg-4 col-md-3 col-sm-4 col-xs-12">
-                        <button type="submit" class="enquiry-button"> Call Me</button>
+                        <button type="submit" class="enquiry-button" onClick="ga('send', 'event', {eventCategory: 'enquire now', eventAction: 'submit', eventLabel: 'book-my-site-visit', eventValue: 1});"> Call Me</button>
                     </div>
                     <div><span class="error" id="m_err"></span></div>
                 </form>
@@ -430,7 +430,7 @@
                             <li class="active"><a href="#feature-sub1" data-toggle="tab">Atrium</a></li>
                             <li><a href="#feature-sub2" data-toggle="tab">Club privada</a></li>
                             <li><a href="#feature-sub23" data-toggle="tab">Independent Lobby</a></li>
-                              <li><a href="#feature-sub22" data-toggle="tab">Multi-purpose Banquet hall </a></li>
+                            <li><a href="#feature-sub22" data-toggle="tab">Multi-purpose Banquet hall </a></li>
                             <li><a href="#feature-sub3" data-toggle="tab">Sky Lounge</a></li>
                             <li><a href="#feature-sub4" data-toggle="tab">Grandeur Living Room</a></li>
                             <li><a href="#feature-sub5" data-toggle="tab">Luxurious Master Bedroom</a></li>
@@ -440,11 +440,11 @@
                             <li><a href="#feature-sub9" data-toggle="tab">Fitness</a></li>
                             <li><a href="#feature-sub10" data-toggle="tab">outdoor Sports</a></li>
                             <li>
-                            <a>indoor Sports</a>
-                            <ul class="inner-list">
-                                <li> <a href="#feature-sub20" data-toggle="tab">table tennis</a></li>
-                                <li> <a href="#feature-sub21" data-toggle="tab">play station</a></li>
-                            </ul>
+                                <a>indoor Sports</a>
+                                <ul class="inner-list">
+                                    <li> <a href="#feature-sub20" data-toggle="tab">table tennis</a></li>
+                                    <li> <a href="#feature-sub21" data-toggle="tab">play station</a></li>
+                                </ul>
 
                             </li>
                             <li><a href="#feature-sub11" data-toggle="tab">Recreation</a></li>
@@ -615,7 +615,7 @@
                                     </figcaption>
                                 </figure>
                             </div>
-                             <div id="feature-sub20" class="tab-pane">
+                            <div id="feature-sub20" class="tab-pane">
                                 <figure>
                                     <img src="images/features/indoor-game1.jpg" title="Water features - Sarjapur Luxury Apartments" alt="Water features at La Palazzo - luxury apartments in Sarjapur Bangalore" class="img-responsive"/>
                                     <figcaption>
@@ -623,7 +623,7 @@
                                     </figcaption>
                                 </figure>
                             </div>
-                             <div id="feature-sub21" class="tab-pane">
+                            <div id="feature-sub21" class="tab-pane">
                                 <figure>
                                     <img src="images/features/indoor-game2.jpg" title="Water features - Sarjapur Luxury Apartments" alt="Water features at La Palazzo - luxury apartments in Sarjapur Bangalore" class="img-responsive"/>
                                     <figcaption>
@@ -631,7 +631,7 @@
                                     </figcaption>
                                 </figure>
                             </div>
-                             <div id="feature-sub22" class="tab-pane">
+                            <div id="feature-sub22" class="tab-pane">
                                 <figure>
                                     <img src="images/features/multipurpose.jpg" title="Water features - Sarjapur Luxury Apartments" alt="Water features at La Palazzo - luxury apartments in Sarjapur Bangalore" class="img-responsive"/>
                                     <figcaption>
@@ -954,7 +954,7 @@
                 <!--all tab menu-->
                 <div id="features_xs" class="tab-pane active">
                     <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                       
+
                         <!-- Wrapper for slides -->
 
                         <div class="carousel-inner" role="listbox">
@@ -1124,18 +1124,18 @@
                                 <p align="left">What prompted me to choose La Palazzo was the product, features it offers and a fabulous location. Also I feel La Palazzo is an overall well packaged product at reasonable price.  
                                     At La Palazzo they are a bunch of extremely professional people who I am confident about.</p>
                                 <p align="left">Benefits of living at La Palazzo:</p>
-                               
+
                                 <ol align="left" class="txt-style">
                                     <li> Overall luxury experience</li>
                                     <li> Easy connectivity to many places in Bangalore</li>
                                     <li> Quality and reliability of builder and team</li>
                                 </ol>
-                              
+
                                 <p align="left">I would like to refer La Palazzo to close friends and family because of the lifestyle that La Palazzo offers. People who are like me and who would like to elevate their lives to a more luxurious lifestyle would be the ones that I would definitely recommend La Palazzo to.</p><br>
                                 <p align="left"><strong>Mr. Balasubramaniam Mahalingam</strong></p>
-                                
-                                 <p align="left"><small>Bangalore,Karnataka</small></p>
-                                
+
+                                <p align="left"><small>Bangalore,Karnataka</small></p>
+
                             </div>
 
                         </div>
@@ -1152,17 +1152,17 @@
                                     .</p>
                                 <p align="left">La Palazzo is our second home and we wanted this to be the right fit. La Palazzo is a well thought through project. It works perfectly for our lifestyle, for family as well as work. 
                                     The Location, number of apartments, apartment configuration and everything else is what makes La Palazzo the perfect choice for me.
-                                    
+
                                 </p>
                                 <p align="left">Three Major benefits, which I feel at La Palazzo, are:</p>
-                                
+
                                 <ol align="left" class="txt-style">
                                     <li> Configuration & Specifications</li>
                                     <li> Confidence we gained from the Team</li>
                                     <li>  Approachability – the way the team dealt with us in managing our requirements and minor modifications, was excellent.
-                                    This was not possible with any of the other project options we were in discussion with.</li>
+                                        This was not possible with any of the other project options we were in discussion with.</li>
                                 </ol>
-                                
+
                                 <p align="left">I would definitely recommend La Palazzo to friends and family who would have a lifestyle and/ or requirement like mine.</p><br>
 
 
@@ -1349,7 +1349,7 @@ async defer></script>
 
     function enquireValidate($this) {
         $('.error').text('');
-        
+
         //alert()
         var name = ($($this).find('#first_name').val()).trim();
         //alert(name)
@@ -1357,14 +1357,14 @@ async defer></script>
         //alert(mobile)
         var email = ($($this).find('#email').val()).trim();
         //alert(email)
-       
+
         if (name == '') {
-            
+
             $('#nam_err').text('Please enter name');
             $($this).find('#first_name').focus();
             return false;
         }
-        
+
         if (email == '') {
             $('#email_err').text('Please enter email id');
             $($this).find('#e-mail').focus();
@@ -1388,22 +1388,22 @@ async defer></script>
                 return false;
             }
         }
-       
+
     }
 
     function callMeValidate($this) {
-       // alert("")
+        // alert("")
         $('.error').text('');
         var name = ($($this).find('#name').val()).trim();
         var mobile = ($($this).find('#mob').val()).trim();
-  
+
         if (name == '') {
             $('#m_err').text('Please enter name');
             $($this).find('#name').focus();
             return false;
         }
-        
-        
+
+
         if (mobile == '') {
             $('#m_err').text('Please enter phone number');
             $($this).find('#mob').focus();
@@ -1435,10 +1435,10 @@ async defer></script>
         return true;
     }
 </script>
-<!-- <script type="text/javascript">
+<script type="text/javascript">
 
     $(window).scroll(function (e) {
-        if ($(this).scrollTop() >90)
+        if ($(this).scrollTop() > 90)
         {
             $('.top').fadeIn();
 
@@ -1449,21 +1449,28 @@ async defer></script>
     });
     $('.top').click(function (e) {
         e.preventDefault();
-        $('html,body').animate({scrollTop: $(this.hash).offset().top - 0}, 1000)
+        $('html,body').animate({scrollTop: $(this.hash).offset()}, 1000)
     });
 
-</script> -->
+</script> 
 <script>
     //start-scroll-top
     $('.enquire-now').click(function (e) {
         e.preventDefault();
         $('html,body').animate({scrollTop: $(this.hash).offset().top - 65}, 1500)
     });
-  $('.enquiry-button').click(function (e) {
-      onClick="ga('send', 'event', { eventCategory: 'Callme', eventAction: 'Click', eventLabel: 'callmelead', eventValue: 1});"
-    });
 
 </script>
-
+<style>
+    .top-call{
+        bottom: 30px;
+        cursor: pointer;
+        display: block !important;
+        position: fixed;
+        right: 15px;
+        z-index: 10;
+        top: 70%;
+    }
+</style>
 </body>
 </html>

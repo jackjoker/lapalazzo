@@ -102,11 +102,7 @@ a:link {
     padding: 10px;
     margin-top: 2px;
     font-family: 'Dosis', sans-serif;
-        display: inline-block;
-    text-align: center;
-        cursor: pointer;
 }
-
 .vide a{
     color: #BA954A !important;
     font-family: 'Dosis', sans-serif;
@@ -162,6 +158,12 @@ ol.txt-style li{    font-family: 'Dosis', sans-serif;    color: #343434; font-si
     letter-spacing: -1px;
 }
 .top{ display: none; }
+.thankyou .bnr-content h1 {
+    font-size: 20px !important;
+    width: auto;
+    letter-spacing: -1px;
+    line-height: 22px;
+}
 }
 @media (min-width: 360px) and (max-width: 479px) {
 #callTop { position: static;width: auto; right: 0; z-index: 11;}
@@ -182,6 +184,12 @@ ol.txt-style li{    font-family: 'Dosis', sans-serif;    color: #343434; font-si
     letter-spacing: -1px;
 }
 .top{ display: none; }
+.thankyou .bnr-content h1 {
+    font-size: 20px !important;
+    width: auto;
+    letter-spacing: -1px;
+    line-height: 22px;
+}
 }
 @media (min-width: 480px) and (max-width: 767px) {
 #callTop { position: static;width: auto; right: 0; z-index: 11;}
@@ -196,4 +204,10 @@ ol.txt-style li{    font-family: 'Dosis', sans-serif;    color: #343434; font-si
 .main-menu .navbar-inverse .navbar-inner {text-align: center; padding: 15px;}
 .inp-hold { width: 100%;}
 .top{ display: none; }
+.thankyou .bnr-content h1 {
+    font-size: 20px !important;
+    width: auto;
+    letter-spacing: -1px;
+    line-height: 22px;
+}
  }

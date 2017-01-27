@@ -448,7 +448,7 @@ footer p {
     padding-bottom: 10px;
     font-size: 14px;
 }
-.thankyou .bnr-content h1{ font-size: 45px !important; width: auto}
+.thankyou .bnr-content h1{ font-size: 45px; width: auto}
 .thankyou .bnr-content a {
     background-color: #ba954a;
     display: inline-block;
@@ -758,8 +758,9 @@ form {
     }
 .bnr-content h1 {
     width: auto;
-    line-height: 30px;
+      line-height: 23px;
     font-size: 24px !important;
+    letter-spacing: -1px;
 }
 .bnr-content h3 {
     font-size: 14px;
