@@ -144,7 +144,7 @@
                     <textarea class="inp-hold form-control1" id="message" name="message" cols="34" placeholder="Message"></textarea><br>     <br>
                      <span class="error" id="mes_err"></span>
 
-                   <button type="submit" class="enquiry-button">Book my site visit</button>                                
+                   <a type="submit" class="enquiry-button">Book my site visit</a>                                
                 </div>
         </div><br>
         <div><span class="error" id="enq_err"></span></div>
@@ -1458,6 +1458,9 @@ async defer></script>
     $('.enquire-now').click(function (e) {
         e.preventDefault();
         $('html,body').animate({scrollTop: $(this.hash).offset().top - 65}, 1500)
+    });
+  $('.enquiry-button').click(function (e) {
+      onClick="ga('send', 'event', { eventCategory: 'Callme', eventAction: 'Click', eventLabel: 'callmelead', eventValue: 1});"
     });
 
 </script>
