@@ -1,5 +1,5 @@
 @charset "utf-8";
-body{ font-family: 'DINBek' !important;}
+body{ font-family: 'Dosis', sans-serif !important;}
 a:hover,a:focus,a:active{ text-decoration: none !important}
 textarea:focus, input:focus, button:focus,.form-control:focus  {
     outline:  none !important;
